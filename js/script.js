@@ -17,8 +17,8 @@ expenseForm.addEventListener("submit", function (event) {
     const newRow = document.createElement("tr");
 
     newRow.innerHTML = `<td>${description}</td>
-                        <td>${category}</td>
-                        <td>${amount}</td>`;
+    <td>${category}</td>
+    <td>${amount}</td>`;
 
     expenseList.appendChild(newRow);
 
@@ -29,4 +29,8 @@ expenseForm.addEventListener("submit", function (event) {
   } else {
     alert("Please fill out all fields with valid data.");
   }
+});
+
+document.querySelector(".clear-btn").addEventListener("click", function () {
+  expenseList.innerHTML = "";
 });

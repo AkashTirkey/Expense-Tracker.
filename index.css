@@ -1,48 +1,64 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
+.body{
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 .container{
-    max-width: 700px;
-    margin: 0 auto;
-    padding:20px;
+    max-width:600px;
+    margin: 0 auto; /* sets the top and bottom to 0 and left and right margins equally to center the content horizontally*/
+    padding: 8px;
     background-color: #f9f9f9;
-    border-radius: 23x;
+    border-radius: 23px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
+}
 input[type="text"],select,input[type="submit"],input[type="number"]{
-    margin-bottom: 8px;
+    margin: 4px 0px 7px 0px;
+    /* margin-top: 4px; */
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    border: none;
 }
-
 
 input[type="submit"]{
     background-color: #4caf5d;
     color: white;
-    border: none;
     cursor: pointer;
+    border: none;
 }
+
 input[type="submit"]:hover{
-    background-color: #45a049;
+    background-color: #4ca049;
 }
 
 table{
     width: 100%;
-    border-collapse: collapse;
+    /* border-collapse: seperate; */
+    border-collapse: collapse; /*Merges (collapses) the borders of table cells into a single border.*/
 }
-
 th,td{
-    padding: 8px;
-    text-align: left;
     border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
 }
 
 th{
-     background-color: #4caf50;
-     color: white;
+    background-color: #4caf50;
+    color: white;
+
+}
+button{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #1a1d1a;
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    text-align: right;
+    
+}
+button:hover{
+    background-color: grey;
 }
